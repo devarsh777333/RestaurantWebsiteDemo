@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A polished demo website for a modern neighbourhood restaurant.">
+  <title>Juniper Table | Restaurant Demo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="demo-banner">PORTFOLIO DEMO · Fictional restaurant, menu and prices — replace before using for a real business</div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Juniper Table home">
+      <span class="brand-mark">J<span>.</span></span>
+      <span class="brand-name">juniper <b>table</b><small>FOOD · PEOPLE · MOMENTS</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav id="mainNav">
+      <a href="#story">Our story</a>
+      <a href="#menu">Menu</a>
+      <a href="#visit">Visit us</a>
+      <a class="nav-cta" href="#reserve">Book a table <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <p class="eyebrow"><span></span> A NEIGHBOURHOOD RESTAURANT</p>
+        <h1>Good food.<br><em>Better company.</em></h1>
+        <p class="hero-copy">Seasonal plates, thoughtfully made. Come for a quick coffee, stay for one more course.</p>
+        <div class="hero-actions">
+          <a class="button button-light" href="#menu">Explore the menu <span>↓</span></a>
+          <a class="text-link" href="#story">Get to know us <span>↗</span></a>
+        </div>
+        <div class="hero-note"><span class="note-dot"></span> A little place to feel at home</div>
+      </div>
+      <div class="hero-side-label">MADE WITH CARE · SERVED WITH HEART</div>
+    </section>
+
+    <section class="intro section-wrap" id="story">
+      <div class="intro-label"><span>01</span> OUR PHILOSOPHY</div>
+      <div class="intro-main">
+        <h2>Simple ingredients.<br><em>Memorable moments.</em></h2>
+        <p>We believe the best meals are the ones shared. Our kitchen brings together comforting favourites, fresh seasonal ingredients and a little curiosity — all in a space made for slowing down.</p>
+        <a class="underlined-link" href="#visit">Pull up a chair <span>↗</span></a>
+      </div>
+      <div class="intro-image" role="img" aria-label="A table set for a relaxed restaurant meal"></div>
+    </section>
+
+    <section class="menu-section" id="menu">
+      <div class="section-wrap">
+        <div class="section-heading">
+          <div><div class="intro-label"><span>02</span> FROM OUR KITCHEN</div><h2>A few <em>favourites.</em></h2></div>
+          <p>Good things, made fresh.<br><small>Sample menu for demonstration only.</small></p>
+        </div>
+        <div class="menu-filters" role="group" aria-label="Filter menu">
+          <button class="menu-filter active" data-filter="all">All favourites</button>
+          <button class="menu-filter" data-filter="small">Small plates</button>
+          <button class="menu-filter" data-filter="mains">Mains</button>
+          <button class="menu-filter" data-filter="drinks">Drinks</button>
+        </div>
+        <div class="menu-grid">
+          <article class="menu-card" data-category="small">
+            <div class="dish-image dish-one"></div><div class="dish-details"><div><h3>Whipped feta toast</h3><p>Herbed feta, grilled sourdough, seasonal greens</p></div><span>₹320</span></div>
+          </article>
+          <article class="menu-card" data-category="mains">
+            <div class="dish-image dish-two"></div><div class="dish-details"><div><h3>Roasted garden bowl</h3><p>Roasted vegetables, grains, lemon-tahini dressing</p></div><span>₹460</span></div>
+          </article>
+          <article class="menu-card" data-category="mains">
+            <div class="dish-image dish-three"></div><div class="dish-details"><div><h3>House-made pasta</h3><p>Slow-cooked tomato, basil, parmesan</p></div><span>₹520</span></div>
+          </article>
+          <article class="menu-card" data-category="drinks">
+            <div class="dish-image dish-four"></div><div class="dish-details"><div><h3>Brown sugar latte</h3><p>Double espresso, steamed milk, brown sugar</p></div><span>₹240</span></div>
+          </article>
+        </div>
+        <p class="menu-disclaimer">All dishes and prices shown are fictional sample content. Confirm menu, allergens and prices with the restaurant before publishing.</p>
+      </div>
+    </section>
+
+    <section class="quote-section">
+      <div class="quote-mark">“</div>
+      <blockquote>The kind of place where lunch turns into a long afternoon.</blockquote>
+      <p>THE JUNIPER TABLE FEELING</p>
+    </section>
+
+    <section class="visit-section section-wrap" id="visit">
+      <div class="visit-photo"></div>
+      <div class="visit-copy">
+        <div class="intro-label"><span>03</span> COME ON IN</div>
+        <h2>Your seat<br>is <em>waiting.</em></h2>
+        <p>Meet a friend, celebrate something small, or take a quiet moment for yourself. We’ll put the kettle on.</p>
+        <div class="visit-details">
+          <div><span class="detail-icon">⌖</span><div><b>Find us</b><p>Sample location, Ahmedabad, Gujarat</p></div></div>
+          <div><span class="detail-icon">◷</span><div><b>Opening hours</b><p>Mon–Sun · 10:00 AM – 10:00 PM</p></div></div>
+        </div>
+        <a class="button button-dark" href="#reserve">Plan your visit <span>↗</span></a>
+      </div>
+    </section>
+
+    <section class="reserve-section" id="reserve">
+      <div class="reserve-inner">
+        <p class="eyebrow"><span></span> SAVE YOURSELF A SEAT</p>
+        <h2>Let’s make it<br><em>a date.</em></h2>
+        <p>For a table enquiry, send us a WhatsApp message. We’ll confirm availability directly.</p>
+        <form id="bookingForm" class="booking-form">
+          <label>Your name<input id="guestName" type="text" placeholder="Name" required></label>
+          <label>Guests<select id="guestCount"><option>1 guest</option><option selected>2 guests</option><option>3 guests</option><option>4 guests</option><option>5+ guests</option></select></label>
+          <label>Preferred date<input id="guestDate" type="date" required></label>
+          <button class="button button-light" type="submit">Enquire on WhatsApp <span>↗</span></button>
+        </form>
+        <p class="booking-note">Demo form: it opens WhatsApp with your enquiry details. No reservation is confirmed automatically.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="brand footer-brand" href="#home"><span class="brand-mark">J<span>.</span></span><span class="brand-name">juniper <b>table</b><small>FOOD · PEOPLE · MOMENTS</small></span></a>
+    <p>Made for good food and good company.</p>
+    <div class="footer-bottom"><span>© <span id="year"></span> Juniper Table · Demo concept</span><a href="#home">Back to top ↑</a></div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
